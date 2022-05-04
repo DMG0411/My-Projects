@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1640776535 source:c:\users\m2bob\documents\codeblocks\eval_math\main.cpp
+	<iostream>
+	<cstring>
+	<graphics.h>
+	<cmath>
+
