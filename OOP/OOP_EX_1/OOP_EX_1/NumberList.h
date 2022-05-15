@@ -42,5 +42,7 @@ void NumberList::Sort()
 void NumberList::Print()
 {
 	for (int i = 0; i < 10; i++)
-		printf("%d", numbers[i]);
+		{
+                 printf("%d", numbers[i]);
+                 printf("CTOR: %d");
 }
