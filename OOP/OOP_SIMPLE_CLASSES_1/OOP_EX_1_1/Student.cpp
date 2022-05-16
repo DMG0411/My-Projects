@@ -1,73 +1,24 @@
 #include <iostream>
 #include "Student.h"
 
-// We make 5 functions to compare the name, grades and average grades of two students 
-// If the first is bigger than the second one the functions will return 1, -1 if the second student is bigger
-// Or 0 if both students are equal
-
-int NameCmp(std::string x, std::string y)
+void Student::NameSet(std::string x)
 {
-	if (x > y)
-	{
-		printf("%d\n,1");
-		return 1;
-	}
-	else if (x < y)
-		return -1;
-	printf("%d\n,0");
-	return 0;
+	name = x;
 }
-int MathCmp(int x, int y)
+void Student::MathSet(int x)
 {
-	if (x > y)
-		return 1;
-	else if (x < y)
-		return -1;
-	return 0;
+	math_grade = x;
 }
-int EngCmp(int x, int y)
+void Student::EngSet(int x)
 {
-	if (x > y)
-		return 1;
-	else if (x < y)
-		return -1;
-	return 0;
+	eng_grade = x;
 }
-int HstCmp(int x, int y)
+void Student::HstSet(int x)
 {
-	if (x > y)
-		return 1;
-	else if (x < y)
-		return -1;
-	return 0;
+	hst_grade = x;
 }
-int AvgCmp(float x, float y)
+float Student::AvgGrade(int math_grade, int eng_grade, int hst_grade)
 {
-	if (x > y)
-		return 1;
-	else if (x < y)
-		return -1;
-	return 0;
-}
-int main()
-{
-	Student s1;
-	Student s2;
-	s1.NameSet("Mike");
-	s2.NameSet("Todd");
-	s1.EngSet(10);
-	s2.EngSet(9);
-	s1.MathSet(8);
-	s2.MathSet(8);
-	s1.HstSet(7);
-	s2.HstSet(5);
-	s1.AvgGrade(s1.eng_grade, s1.math_grade, s1.hst_grade);
-	s2.AvgGrade(s2.eng_grade, s2.math_grade, s2.hst_grade);
-
-	NameCmp(s1.name, s2.name);
-	EngCmp(s1.eng_grade, s2.eng_grade);
-	MathCmp(s1.math_grade, s2.math_grade);
-	HstCmp(s1.hst_grade, s2.hst_grade);
-	AvgCmp(s1.avg, s2.avg);
-
+	avg = (math_grade + eng_grade + hst_grade) / 3.0;
+	return avg;
 }

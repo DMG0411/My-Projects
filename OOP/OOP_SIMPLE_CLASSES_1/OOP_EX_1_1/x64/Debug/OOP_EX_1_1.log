@@ -1,9 +1,2 @@
-﻿  Student.cpp
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.h(37,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.cpp(12,10): warning C4473: 'printf' : not enough arguments passed for format string
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.cpp(12,10): message : placeholders and their parameters expect 1 variadic arguments, but 0 were provided
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.cpp(12,10): message : the missing variadic argument 1 is required by format string '%d'
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.cpp(17,9): warning C4473: 'printf' : not enough arguments passed for format string
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.cpp(17,9): message : placeholders and their parameters expect 1 variadic arguments, but 0 were provided
-C:\Users\m2bob\source\repos\OOP_EX_1_1\OOP_EX_1_1\Student.cpp(17,9): message : the missing variadic argument 1 is required by format string '%d'
-  OOP_EX_1_1.vcxproj -> C:\Users\m2bob\source\repos\OOP_EX_1_1\x64\Debug\OOP_EX_1_1.exe
+﻿  main.cpp
+  OOP_EX_1_1.vcxproj -> C:\Users\m2bob\Desktop\My-Projects\OOP\OOP_SIMPLE_CLASSES_1\x64\Debug\OOP_EX_1_1.exe

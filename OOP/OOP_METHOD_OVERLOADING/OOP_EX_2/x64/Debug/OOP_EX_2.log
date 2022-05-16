@@ -1,0 +1,11 @@
+﻿  Math.cpp
+Math.obj : error LNK2005: "public: static int __cdecl Math::Add(int,int)" (?Add@Math@@SAHHH@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Add(int,int,int)" (?Add@Math@@SAHHHH@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Add(int,...)" (?Add@Math@@SAHHZZ) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Add(double,double)" (?Add@Math@@SAHNN@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Add(double,double,double)" (?Add@Math@@SAHNNN@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Mul(int,int)" (?Mul@Math@@SAHHH@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Mul(int,int,int)" (?Mul@Math@@SAHHHH@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Mul(double,double)" (?Mul@Math@@SAHNN@Z) already defined in main.obj
+Math.obj : error LNK2005: "public: static int __cdecl Math::Mul(double,double,double)" (?Mul@Math@@SAHNNN@Z) already defined in main.obj
+C:\Users\m2bob\source\repos\OOP_EX_2\x64\Debug\OOP_EX_2.exe : fatal error LNK1169: one or more multiply defined symbols found
