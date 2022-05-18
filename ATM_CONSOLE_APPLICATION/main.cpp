@@ -39,7 +39,7 @@ int main()
 			printf("%s\n", "Please insert the amount of money you want to withdraw:");
 			std::cin >> withdraw_money;
 			printf("%s\n", "");
-			if (withdraw_money > u.GetBalance()) 
+			if (withdraw_money > u.GetBalance())
 			{
 				printf("%s\n", "Sorry, unsufficient founds, please try again or return to the main menu");
 				int choose;
@@ -47,27 +47,35 @@ int main()
 				printf("%s\n", "1. Try to enter another amount of money or 0 to return to main menu");
 				printf("%s\n", "2. Return to main menu");
 				std::cin >> choose;
-				switch (choose)
+				if (choose < 1 || choose > 2)
 				{
-				case 1:
-					while (withdraw_money > u.GetBalance() && withdraw_money != 0)
+					printf("%s\n", "You've entered an invalid option, returning to the main menu");
+				}
+				else
+				{
+					switch (choose)
 					{
-						printf("%s", "Please insert the amount of money you want to withdraw:");
-						std::cin >> withdraw_money;
-						printf("%s\n", "");
-						if (withdraw_money == 0) 
+					case 1:
+						while (withdraw_money > u.GetBalance() && withdraw_money != 0)
 						{
-							break;
-						}
-						else if (withdraw_money < u.GetBalance())
-						{
-							printf("%s\n", "You withdrew your money succesfully!");
-							u.Withdraw(withdraw_money);
-						}
-					}break;
-				case 2:
+							printf("%s", "Please insert the amount of money you want to withdraw:");
+							std::cin >> withdraw_money;
+							printf("%s\n", "");
+							if (withdraw_money == 0)
+							{
+								break;
+							}
+							else if (withdraw_money < u.GetBalance())
+							{
+								printf("%s\n", "You withdrew your money succesfully!");
+								u.Withdraw(withdraw_money);
+							}
+						}break;
+					case 2:
+						break;
+					}
 					break;
-				}	
+				}
 			}
 			else 
 			{
